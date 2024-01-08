@@ -91,6 +91,20 @@ let users = [
     birthDate: "25.03.1991",
   },
 ];
+document.getElementById("table").innerHTML += `
+  <thead id="tableBody">
+      <tr>
+        <th>${users[0].firstName}</th>
+        <th>${users[0].lastName}</th>
+        <th>${users[0].age}</th>
+        <th>${users[0].mail}</th>
+        <th>${users[0].address}</th>
+        <th>${users[0].phone}</th>
+        <th>${users[0].birthDate}</th>
+      </tr>
+
+  </thead>
+`;
 
 for (let i = 0; i < users.length; i++) {
   document.getElementById("tableBody").innerHTML += `
@@ -105,3 +119,4 @@ for (let i = 0; i < users.length; i++) {
         </tr>
         `;
 }
+
